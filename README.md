@@ -1,13 +1,10 @@
-# emscripten-fs-example
+# emscripten-bas2tap
 
 A simple example project for porting a command-line C program to a JavaScript
 library using Emscripten.  Here, the program reads a file and writes its output
 to another file.
 
-There is a [similar example](https://github.com/kripken/xml.js/), but instead
-of writing a *hacky wrapper* using `sed`, this one uses the `MODULARIZE` option
-together with `--pre-js` and `--post-js` wrappers to write input file and read
-output file.
+The upstream project has been adapted to convert ZX Spectrum basic to tape file.
 
 ## Dependencies
 
@@ -22,6 +19,22 @@ then run `npm run test` to test it (check `test.js`).  Also, `npm run
 build:debug` builds the project without optimizations.
 
 ## License
+
+Copyleft (C) 1998-2013 ThunderWare Research Center, written by Martijn van der Heide.
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 MIT License
 

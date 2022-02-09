@@ -11,4 +11,4 @@ set(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -O2")
 
 file(GLOB SOURCES "src/*.c")
 
-add_executable(example ${SOURCES})
+add_executable(bas2tap ${SOURCES})

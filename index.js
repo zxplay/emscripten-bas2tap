@@ -1,11 +1,11 @@
-const Module = require('./lib/example.js')
+const Module = require('./lib/bas2tap.js')
 
 module.exports = input => {
   return new Promise((resolve, reject) => {
     Module({
       'input': input,
       'resolve': resolve,
-      'arguments': ['inputFile', 'outputFile']
+      'arguments': ['input.bas', 'output.tap', '-a', '-shello']
     });
   });
 }
