@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "test": "node test.js",
+    "test": "node test/test.js",
     "prepack": "npm run build",
     "build": "npm run build:release",
-    "build:debug": "mkdirp build && cd build && emcmake cmake -DCMAKE_BUILD_TYPE=Debug .. && make && cp-cli bas2tap.js ../public/dist/bas2tap.js",
-    "build:release": "mkdirp build && cd build && emcmake cmake -DCMAKE_BUILD_TYPE=Release .. && make && cp-cli bas2tap.js ../public/dist/bas2tap.js"
+    "build:debug": "mkdirp build && cd build && emcmake cmake -DCMAKE_BUILD_TYPE=Debug ../src/lib/bas2tap/ && make && cp-cli bas2tap.js ../public/dist/bas2tap.js",
+    "build:release": "mkdirp build && cd build && emcmake cmake -DCMAKE_BUILD_TYPE=Release ../src/lib/bas2tap/ && make && cp-cli bas2tap.js ../public/dist/bas2tap.js"
   },
   "devDependencies": {
     "cp-cli": "^1.1.2",
