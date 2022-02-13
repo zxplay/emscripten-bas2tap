@@ -1,6 +1,6 @@
 {
   "name": "bas2tap",
-  "version": "0.0.1-alpha.1",
+  "version": "0.0.1-alpha.2",
   "author": "Steven Robertson <stever@hey.com>",
   "main": "dist/bas2tap.js",
   "license": "GPL-2.0+",
