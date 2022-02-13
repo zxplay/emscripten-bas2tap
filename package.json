@@ -3,6 +3,11 @@
   "version": "0.0.1-alpha.1",
   "author": "Steven Robertson <stever@hey.com>",
   "main": "dist/bas2tap.js",
+  "license": "GPL-2.0+",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/stever/emscripten-bas2tap.git"
+  },
   "scripts": {
     "build": "run-s clean:all build:release clean",
     "build:debug": "mkdirp build && cd build && emcmake cmake -DCMAKE_BUILD_TYPE=Debug ../src/ && make && cp-cli bas2tap.js ../dist/bas2tap.js",
