@@ -1,4 +1,4 @@
-const Module = require('./lib/bas2tap.js')
+const Module = require('./public/dist/bas2tap.js')
 
 module.exports = input => {
   return new Promise((resolve, reject) => {
