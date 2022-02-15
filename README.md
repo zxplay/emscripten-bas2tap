@@ -9,6 +9,24 @@ used in a ZX Spectrum emulator. Both 48K and 128K listings are supported.
 npm install bas2tap
 ```
 
+```javascript
+import Module from "bas2tap";
+
+export function bas2tap(input) {
+    return new Promise((resolve, reject) => {
+        Module({
+            'input': input,
+            'resolve': resolve,
+            'arguments': ['input.bas', 'output.tap', '-a']
+        });
+    });
+}
+```
+
+```javascript
+const tap = bas2tap('10 PRINT "Hello"');
+```
+
 ## Licenses
 
 ### BAS2TAP.C
