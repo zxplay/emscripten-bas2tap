@@ -17,6 +17,14 @@ import bas2tap from "bas2tap";
 const tap = bas2tap('10 PRINT "Hello"');
 ```
 
+## Build library
+
+```bash
+npm install
+npm run build
+npm run test
+```
+
 ## Licenses
 
 ### BAS2TAP.C
