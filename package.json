@@ -27,11 +27,11 @@
   ],
   "scripts": {
     "build": "run-s clean:all build:release clean",
-    "build:debug": "mkdirp build && cd build && emcmake cmake -DCMAKE_BUILD_TYPE=Debug ../src/ && make && cp-cli bas2tap.js ../dist/bas2tap.js",
-    "build:release": "mkdirp build && cd build && emcmake cmake -DCMAKE_BUILD_TYPE=Release ../src/ && make && cp-cli bas2tap.js ../dist/bas2tap.js",
+    "build:debug": "mkdirp build && cd build && emcmake cmake -DCMAKE_BUILD_TYPE=Debug .. && make && cp-cli bas2tap.js ../dist/bas2tap.js",
+    "build:release": "mkdirp build && cd build && emcmake cmake -DCMAKE_BUILD_TYPE=Release .. && make && cp-cli bas2tap.js ../dist/bas2tap.js",
     "clean": "del-cli build",
     "clean:all": "del-cli build dist",
-    "test": "node test/bas2tap.test.js",
+    "test": "jest",
     "publish-pkg": "npm publish --access public"
   },
   "devDependencies": {
