@@ -254,5 +254,5 @@ Build dependencies:
 * emscripten
 
 Clone the repository and run `npm run build` to build the library.  You can
-then run `npm run test` to test it (check `test.js`).  Also, `npm run
+then run `npm run test` to test it (check `bas2tap.test.js`).  Also, `npm run
 build:debug` builds the project without optimizations.
