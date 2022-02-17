@@ -1,7 +1,9 @@
-# emscripten-bas2tap
+# bas2tap
+
+Emscripten conversion for bas2tap which converts BASIC to a TAP tape file.
 
 This package converts 'BASIC in an ASCII file' to a TAP tape image file, to be
-used in a ZX Spectrum emulator. Both 48K and 128K listings are supported.
+used in a ZX Spectrum emulator.
 
 ## Usage
 
