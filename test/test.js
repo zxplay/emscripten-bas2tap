@@ -1,5 +1,5 @@
 const assert = require('assert');
-const cat = require('./index.js');
+const cat = require('../index.js');
 
 let bas = '';
 bas = bas + '10 PRINT "Hello, world!"\n';

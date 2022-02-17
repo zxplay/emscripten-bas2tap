@@ -1,11 +1,11 @@
-const Module = require('../dist/bas2tap.js')
+const Module = require('./dist/bas2tap.js')
 
 module.exports = input => {
   return new Promise((resolve, reject) => {
     Module({
       'input': input,
       'resolve': resolve,
-      'arguments': ['input.bas', 'output.tap', '-a', '-shello']
+      'arguments': ['input.bas', 'output.tap', '-a']
     });
   });
 }
