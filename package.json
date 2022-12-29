@@ -1,22 +1,22 @@
 {
   "name": "bas2tap",
-  "version": "0.0.1-alpha.3",
+  "version": "0.0.1-alpha.4",
   "main": "index.js",
   "license": "GPL-2.0+",
-  "author": "Steven Robertson <stever@hey.com>",
+  "author": "Steve Robertson <stever@hey.com>",
   "description": "Emscripten conversion for bas2tap which converts BASIC to a TAP tape file.",
   "keywords": [
     "emscripten",
     "zxspectrum",
     "basic"
   ],
-  "homepage": "https://github.com/stever/bas2tap#readme",
+  "homepage": "https://github.com/stever/emscripten-bas2tap#readme",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/stever/bas2tap.git"
+    "type": "git",
+    "url": "https://github.com/stever/emscripten-bas2tap.git"
   },
   "bugs": {
-    "url": "https://github.com/stever/bas2tap/issues"
+    "url": "https://github.com/stever/emscripten-bas2tap/issues"
   },
   "files": [
     "index.js",
@@ -31,7 +31,7 @@
     "build:release": "mkdirp build && cd build && emcmake cmake -DCMAKE_BUILD_TYPE=Release .. && make && cp-cli bas2tap.js ../dist/bas2tap.js",
     "clean": "del-cli build",
     "clean:all": "del-cli build dist",
-    "test": "jest",
+    "test": "jest --noStackTrace",
     "publish-pkg": "npm publish --access public"
   },
   "devDependencies": {
@@ -66,5 +66,6 @@
     "plugins": [
       "@babel/plugin-transform-runtime"
     ]
-  }
+  },
+  "dependencies": {}
 }
